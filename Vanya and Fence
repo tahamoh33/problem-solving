@@ -1,0 +1,23 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main(){
+   int n;
+   int height;
+   int counter=0;
+   cin>>n>>height;
+   int samples;
+   for(int i=0;i<n;i++){
+    cin>>samples;
+    if(samples<=height){
+        counter++;
+    }
+    else{
+        counter+=2;
+    }
+   }
+	cout<<counter<<endl;
+ 
+    return 0;
+}
