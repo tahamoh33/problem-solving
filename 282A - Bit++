@@ -1,0 +1,25 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main(){
+string value;
+int counter=0;
+int n;
+cin>>n;
+for(int i=0;i<n;i++){
+    cin>>value;
+if((value[0]=='+' && value[1]=='+' )||( value[1]=='+'&& value[2]=='+')){
+    counter++;
+}
+else if ((value[0]=='-' && value[1]=='-' )|| (value[1]=='-'&& value[2]=='-')){
+        counter--;
+}
+}
+cout<<counter;
+ 
+ 
+ 
+ 
+    return 0;
+}
